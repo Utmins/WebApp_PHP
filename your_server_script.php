@@ -1,7 +1,7 @@
 <?php
 // Assuming you have a MySQL database set up with a table named 'users' and fields 'username' and 'information'
 
-$servername = "10.0.3.15";
+$servername = "localhost";
 $username = "root";
 $password = "test";
 $dbname = "users";
