@@ -8,10 +8,10 @@ CREATE TABLE users (
   first_name VARCHAR(30),
   last_name VARCHAR(30),
   age INT,
-  address VARCHAR(255),
-  city VARCHAR(255),
-  state VARCHAR(255),
-  country VARCHAR(255),
+  address VARCHAR(30),
+  city VARCHAR(30),
+  state VARCHAR(30),
+  country VARCHAR(30),
   zip_code INT,
   sin INT);
 
