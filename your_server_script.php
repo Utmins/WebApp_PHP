@@ -17,12 +17,20 @@ if ($conn->connect_error) {
 // Retrieve information from the database based on the provided username
 if(isset($_GET['username'])) {
     $username = $_GET['username'];
-    $sql = "SELECT information FROM users WHERE username = '$username'";
+    $sql = "SELECT * FROM users WHERE username = '$username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "Information: " . $row["information"];
+            echo "First Name: " . $row["first_name"];
+            echo "Last Name: " . $row["last_name"];
+            echo "Age: " . $row["age"];
+            echo "Address: " . $row["address"];
+            echo "City: " . $row["city"];
+            echo "State: " . $row["state"];
+            echo "Country: " . $row["country"];
+            echo "Zip Code: " . $row["zip_code"];
+            echo "SIN: " . $row["sin"];
         }
     } else {
         echo "User not found";
